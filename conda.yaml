@@ -1,0 +1,11 @@
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.9.13                     # https://pyreadiness.org/3.9/
+  - pip=22.1.2   
+  - msal=1.23.0
+  - pandas=2.1.0                     # https://pip.pypa.io/en/stable/news/
+  - pip:
+    - rpaframework==22.5.3            # https://rpaframework.org/releasenotes.html
+    - dop-rpaframework==1.2.4

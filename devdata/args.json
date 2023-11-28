@@ -1,0 +1,26 @@
+{
+    "invoice_file_path": {
+        "name": "invoice_file_path",
+        "description": "invoice_file_path",
+        "type": "File",
+        "direction": "IN",
+        "value": "D:/VBPO/RPA/BGFS/bgfs-classify-file-type-and-form-type/data/AI Test 1.xlsx",
+        "required": true
+    },
+    "extract_form_key": {
+        "name": "extract_form_key",
+        "description": "extract_form_key",
+        "type": "String",
+        "direction": "OUT",
+        "value": "form_key_don_brock",
+        "required": true
+    },
+    "status_extract_form_type": {
+        "name": "status_extract_form_type",
+        "description": "status_extract_form_type",
+        "type": "Boolean",
+        "direction": "OUT",
+        "value": "True",
+        "required": true
+    }
+}

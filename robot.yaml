@@ -1,0 +1,43 @@
+tasks:
+  Run all tasks:
+    shell: python -m robot --report NONE --outputdir output --logtitle "Task log" tasks.robot
+
+  Run Example task:
+    robotTaskName: Example task
+
+arguments:
+  input:
+    - name: invoice_file_path
+      type: File
+      required: False
+      defaultValue:
+      description: File hóa đơn được xử lý
+  output:
+    - name: extract_form_key
+      type: String
+      required: True
+      defaultValue:
+      description: Mã định danh form extract
+    - name: status_extract_form_type
+      type: Boolean
+      required: True
+      defaultValue:
+      description: Mã định danh form extract
+
+condaConfigFile: conda.yaml
+
+environmentConfigs:
+  - environment_windows_amd64_freeze.yaml
+  - environment_linux_amd64_freeze.yaml
+  - environment_darwin_amd64_freeze.yaml
+  - conda.yaml
+
+artifactsDir: output  
+PATH:
+  - .
+PYTHONPATH:
+  - keywords
+  - resources
+  - libraries
+ignoreFiles:
+  - .gitignore
